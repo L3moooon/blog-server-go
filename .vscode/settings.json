@@ -1,0 +1,18 @@
+{
+  "go.useLanguageServer": true,
+
+  "editor.formatOnSave": true,
+
+  "go.importOnsave": true,
+  "go.formatTool": "goimports",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--enable=all",
+    "--disable=unused", // 可关闭一些无关的检测规则
+    "--fix" // 允许自动修复
+  ]
+}
